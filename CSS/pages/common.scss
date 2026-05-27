@@ -1,17 +1,15 @@
-/* #region FontFace */
-
 /* PRETENDARD */
 
 @font-face {
   font-family: "Pretendard";
-  src: url("../fonts/Pretendard-Light.woff2") format("woff2");
+  src: url("/fonts/Pretendard/Pretendard-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("../fonts/Pretendard-Regular.woff2") format("woff2");
+  src: url("/fonts/Pretendard/Pretendard-Light.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -45,8 +43,6 @@
   font-weight: 700;
   font-style: normal;
 }
-
-/* #endregion */
 
 *,
 *::before,

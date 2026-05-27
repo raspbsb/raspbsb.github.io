@@ -1,0 +1,113 @@
+@charset "UTF-8";
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+
+/* ── Header ── */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+}
+
+/* ── Project Section ── */
+.project-section {
+  width: 100%;
+  max-width: 560px;
+}
+
+/* ── Project List ── */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1.125rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition), background-color var(--transition);
+}
+
+.project-list li:hover {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent-subtle);
+}
+
+/* ── Project Name Link ── */
+.project-list li a:first-child {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-list li:hover a:first-child {
+  color: var(--color-accent-hover);
+}
+
+/* ── Github Badge Link ── */
+.project-list li a:last-child {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  background-color: var(--color-accent-light);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.01em;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.project-list li a:last-child:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* ── Yet (미완성) 항목 처리 ── */
+.project-list li a[href="#"] {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  body {
+    padding: 3rem 1rem;
+    align-items: flex-start;
+  }
+  .project-list li {
+    padding: 0.75rem 1rem;
+  }
+  .project-list li a:first-child {
+    font-size: 0.85rem;
+  }
+}/*# sourceMappingURL=index.css.map */
