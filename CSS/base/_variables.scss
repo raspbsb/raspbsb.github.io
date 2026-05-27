@@ -1,0 +1,71 @@
+:root {
+  // COLOR
+
+  --color-bg: #f8f9fb;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text-primary: #1a202c;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+
+  --color-accent: #5b9bd5;
+  --color-accent-light: #dbeafe;
+  --color-accent-hover: #3b82c4;
+  --color-accent-subtle: #eff6ff;
+
+  // RADIUS
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  // FONTSTYLE
+
+  --font-gmarket: "Gmarket Sans", sans-serif;
+  --font-pretendard: "Pretendard", sans-serif;
+
+  // FONTSIZE
+
+  --font-size-xxs: 10px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+  --font-size-sl-32: 32px;
+  --font-size-sl-40: 40px;
+  --font-size-sl-48: 48px;
+  --font-size-sl-56: 56px;
+
+  // TYPOGRAPHY
+
+  --heading-l: 500 var(--font-size-sl-40)/64px var(--font-gmarket);
+  --heading-l-tight: 500 var(--font-size-sl-40)/100% var(--font-gmarket);
+  --heading-m: 500 var(--font-size-xxl)/48px var(--font-gmarket);
+  --heading-s: 500 var(--font-size-lg)/32px var(--font-gmarket);
+  --heading-x-s: 500 var(--font-size-lg)/32px var(--font-pretendard);
+  --heading-x-x-s: 500 var(--font-size-md)/32px var(--font-pretendard);
+
+  --body-l: 500 var(--font-size-lg)/32px var(--font-pretendard);
+  --body-m-plus-400: 400 var(--font-size-md)/27px var(--font-pretendard);
+  --body-m-plus-500: 500 var(--font-size-md)/27px var(--font-pretendard);
+  --body-m-400: 400 var(--font-size-sm)/27px var(--font-pretendard);
+  --body-m-500: 500 var(--font-size-sm)/27px var(--font-pretendard);
+  --body-m-500: 500 var(--font-size-sm)/27px var(--font-pretendard);
+  --body-s: 400 var(--font-size-sm)/20px var(--font-pretendard);
+
+  --caption-m-tight: 500 var(--font-size-xs)/100% var(--font-pretendard);
+  --caption-m: 500 var(--font-size-xs)/27px var(--font-pretendard);
+  --caption-s: 500 var(--font-size-xxs)/27px var(--font-pretendard);
+
+  --display-700: 700 var(--font-size-sl-56)/64px var(--font-gmarket);
+  --display-500: 500 --font-size-sl-56/64px var(--font-gmarket);
+  --lead-m: 500 var(--font-size-lg)/27px var(--font-gmarket);
+
+  --label-l: 500 var(--font-size-xl)/32px var(--font-pretendard);
+  --label-m-700: 700 var(--font-size-lg)/auto var(--font-pretendard);
+  --label-m-500: 500 var(--font-size-md)/auto var(--font-pretendard);
+}

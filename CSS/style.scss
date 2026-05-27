@@ -1,6 +1,9 @@
-@use "base/reset";
 @use "base/normalize";
+@use "base/reset";
 @use "base/variables";
+@use "base/fonts";
 @use "components/buttons";
+@use "layouts/header";
+@use "layouts/footer";
 @use "pages/common";
 @use "pages/index";
