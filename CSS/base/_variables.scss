@@ -54,7 +54,6 @@
   --body-m-plus-500: 500 var(--font-size-md)/27px var(--font-pretendard);
   --body-m-400: 400 var(--font-size-sm)/27px var(--font-pretendard);
   --body-m-500: 500 var(--font-size-sm)/27px var(--font-pretendard);
-  --body-m-500: 500 var(--font-size-sm)/27px var(--font-pretendard);
   --body-s: 400 var(--font-size-sm)/20px var(--font-pretendard);
 
   --caption-m-tight: 500 var(--font-size-xs)/100% var(--font-pretendard);
@@ -62,10 +61,30 @@
   --caption-s: 500 var(--font-size-xxs)/27px var(--font-pretendard);
 
   --display-700: 700 var(--font-size-sl-56)/64px var(--font-gmarket);
-  --display-500: 500 --font-size-sl-56/64px var(--font-gmarket);
+  --display-500: 500 var(--font-size-sl-56)/64px var(--font-gmarket);
   --lead-m: 500 var(--font-size-lg)/27px var(--font-gmarket);
 
   --label-l: 500 var(--font-size-xl)/32px var(--font-pretendard);
   --label-m-700: 700 var(--font-size-lg)/auto var(--font-pretendard);
   --label-m-500: 500 var(--font-size-md)/auto var(--font-pretendard);
+}
+
+// ─────────────────────────────────────────
+// Dark mode
+// body[data-theme="dark"] 일 때 색상 변수만 덮어씀
+// 타이포그래피/폰트/radius 변수는 그대로 유지
+// ─────────────────────────────────────────
+
+[data-theme="dark"] {
+  --color-bg: #0f1117;
+  --color-surface: #1a1d27;
+  --color-border: #2d3148;
+  --color-text-primary: #e8eaf0;
+  --color-text-secondary: #8b93b0;
+  --color-text-muted: #4a5068;
+
+  --color-accent: #5b9bd5;
+  --color-accent-light: #1a2d45;
+  --color-accent-hover: #7ab3e0;
+  --color-accent-subtle: #141d2e;
 }

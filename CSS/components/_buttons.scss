@@ -1,0 +1,59 @@
+// ─────────────────────────────────────────
+// .btn-badge
+// 링크 뱃지 버튼 공통 스타일
+// 변형: --default / --outline
+// 상태: --disabled (JS가 class 추가, CSS는 시각만 담당)
+// ─────────────────────────────────────────
+
+.btn-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  font-family: var(--font-pretendard);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid transparent;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease,
+    border-color 150ms ease;
+  white-space: nowrap;
+  cursor: pointer;
+
+  .material-icons {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+// ── 연한 파란 채우기 ──────────────────────
+.btn-badge--default {
+  color: var(--color-accent);
+  background-color: var(--color-accent-light);
+
+  &:hover {
+    background-color: var(--color-accent);
+    color: #ffffff;
+  }
+}
+
+// ── 테두리만 ─────────────────────────────
+.btn-badge--outline {
+  color: var(--color-text-secondary);
+  background-color: transparent;
+  border-color: var(--color-border);
+
+  &:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+}
+
+// ── 비활성 시각 처리 (JS가 .is-disabled 부착) ──
+.btn-badge--disabled,
+.btn-badge.is-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}

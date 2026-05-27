@@ -29,23 +29,24 @@
 }
 
 /* GMARKET SANS */
+
 @font-face {
   font-family: "Gmarket Sans";
-  src: url("../fonts/GmarketSansLight.woff2") format("woff");
+  src: url("/fonts/GmarketSans/GmarketSansLight.woff2") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gmarket Sans";
-  src: url("../fonts/GmarketSansMedium.woff2") format("woff");
+  src: url("/fonts/GmarketSans/GmarketSansMedium.woff2") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gmarket Sans";
-  src: url("../fonts/GmarketSansBold.woff2") format("woff");
+  src: url("/fonts/GmarketSans/GmarketSansBold.woff2") format("woff");
   font-weight: 700;
   font-style: normal;
 }

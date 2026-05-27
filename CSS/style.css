@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -497,17 +496,29 @@ input {
   --body-m-plus-500: 500 var(--font-size-md)/27px var(--font-pretendard);
   --body-m-400: 400 var(--font-size-sm)/27px var(--font-pretendard);
   --body-m-500: 500 var(--font-size-sm)/27px var(--font-pretendard);
-  --body-m-500: 500 var(--font-size-sm)/27px var(--font-pretendard);
   --body-s: 400 var(--font-size-sm)/20px var(--font-pretendard);
   --caption-m-tight: 500 var(--font-size-xs)/100% var(--font-pretendard);
   --caption-m: 500 var(--font-size-xs)/27px var(--font-pretendard);
   --caption-s: 500 var(--font-size-xxs)/27px var(--font-pretendard);
   --display-700: 700 var(--font-size-sl-56)/64px var(--font-gmarket);
-  --display-500: 500 --font-size-sl-56/64px var(--font-gmarket);
+  --display-500: 500 var(--font-size-sl-56)/64px var(--font-gmarket);
   --lead-m: 500 var(--font-size-lg)/27px var(--font-gmarket);
   --label-l: 500 var(--font-size-xl)/32px var(--font-pretendard);
   --label-m-700: 700 var(--font-size-lg)/auto var(--font-pretendard);
   --label-m-500: 500 var(--font-size-md)/auto var(--font-pretendard);
+}
+
+[data-theme=dark] {
+  --color-bg: #0f1117;
+  --color-surface: #1a1d27;
+  --color-border: #2d3148;
+  --color-text-primary: #e8eaf0;
+  --color-text-secondary: #8b93b0;
+  --color-text-muted: #4a5068;
+  --color-accent: #5b9bd5;
+  --color-accent-light: #1a2d45;
+  --color-accent-hover: #7ab3e0;
+  --color-accent-subtle: #141d2e;
 }
 
 /* PRETENDARD */
@@ -538,166 +549,230 @@ input {
 /* GMARKET SANS */
 @font-face {
   font-family: "Gmarket Sans";
-  src: url("../fonts/GmarketSansLight.woff2") format("woff");
+  src: url("/fonts/GmarketSans/GmarketSansLight.woff2") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Gmarket Sans";
-  src: url("../fonts/GmarketSansMedium.woff2") format("woff");
+  src: url("/fonts/GmarketSans/GmarketSansMedium.woff2") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Gmarket Sans";
-  src: url("../fonts/GmarketSansBold.woff2") format("woff");
+  src: url("/fonts/GmarketSans/GmarketSansBold.woff2") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.btn-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  font-family: var(--font-pretendard);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid transparent;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn-badge .material-icons {
+  font-size: 14px;
+  line-height: 1;
 }
 
-html {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-}
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--color-bg);
-  color: var(--color-text-primary);
-  line-height: 1.6;
-  min-height: 100vh;
-}
-
-li a {
+.btn-badge--default {
   color: var(--color-accent);
-  text-decoration: none;
-  transition: color var(--transition);
+  background-color: var(--color-accent-light);
+}
+.btn-badge--default:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
 }
 
-a:hover {
-  color: var(--color-accent-hover);
+.btn-badge--outline {
+  color: var(--color-text-secondary);
+  background-color: transparent;
+  border-color: var(--color-border);
+}
+.btn-badge--outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
-ul {
-  list-style: none;
+.btn-badge--disabled,
+.btn-badge.is-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
-body {
+.project-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 1.5rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: border-color 150ms ease, transform 150ms ease;
 }
-
-/* ── Header ── */
-h1 {
-  font-size: 1.5rem;
+.project-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+.project-card__header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 8px 0;
+}
+.project-card__icon-badge {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: var(--font-size-xs);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  color: var(--color-accent);
+  background-color: var(--color-accent-light);
+  padding: 2px 7px;
+  border-radius: var(--radius-xs);
+  letter-spacing: 0.02em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.project-card__thumbnail {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background-color: var(--color-accent-subtle);
+  margin-top: 8px;
+}
+.project-card__thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  transition: transform 300ms ease;
+}
+.project-card:hover .project-card__thumbnail img {
+  transform: scale(1.03);
+}
+.project-card__body {
+  flex: 1;
+  padding: 16px 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.project-card__title {
+  font: var(--heading-x-x-s);
   color: var(--color-text-primary);
-  margin-bottom: 2.5rem;
-  position: relative;
-  padding-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+.project-card__desc {
+  font: var(--body-m-400);
+  color: var(--color-text-secondary);
+}
+.project-card__footer {
+  padding: 8px 16px 16px;
+  border-top: 1px solid var(--color-border);
+  margin-top: auto;
+}
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
 }
 
-h1::after {
+.project-card--wip .project-card__icon-badge,
+.project-card.is-wip .project-card__icon-badge {
+  background-color: #f1f5f9;
+  color: var(--color-text-muted);
+}
+.project-card--wip .project-card__title,
+.project-card--wip .project-card__desc,
+.project-card.is-wip .project-card__title,
+.project-card.is-wip .project-card__desc {
+  color: var(--color-text-muted);
+}
+
+.site-header {
+  position: relative;
+  text-align: center;
+  padding: 48px 24px 32px;
+}
+.site-header h1 {
+  display: inline-block;
+  font: var(--heading-m);
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  position: relative;
+  padding-bottom: 8px;
+}
+.site-header h1::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 2rem;
   height: 2px;
   background-color: var(--color-accent);
   border-radius: 2px;
 }
 
-/* ── Project Section ── */
-.project-section {
-  width: 100%;
-  max-width: 560px;
-}
-
-/* ── Project List ── */
-.project-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.project-list li {
+.theme-toggle {
+  position: absolute;
+  top: 48px;
+  right: 24px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.875rem 1.125rem;
-  background-color: var(--color-surface);
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-xs);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  transition: border-color var(--transition), background-color var(--transition);
+  background-color: var(--color-surface);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease;
 }
-
-.project-list li:hover {
+.theme-toggle:hover {
   border-color: var(--color-accent);
-  background-color: var(--color-accent-subtle);
-}
-
-/* ── Project Name Link ── */
-.project-list li a:first-child {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--color-text-primary);
-  letter-spacing: -0.01em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.project-list li:hover a:first-child {
-  color: var(--color-accent-hover);
-}
-
-/* ── Github Badge Link ── */
-.project-list li a:last-child {
-  flex-shrink: 0;
-  font-size: 0.75rem;
-  font-weight: 500;
   color: var(--color-accent);
-  background-color: var(--color-accent-light);
-  padding: 0.2rem 0.65rem;
-  border-radius: var(--radius-sm);
-  letter-spacing: 0.01em;
-  transition: background-color var(--transition), color var(--transition);
 }
-
-.project-list li a:last-child:hover {
-  background-color: var(--color-accent);
-  color: #ffffff;
-}
-
-/* ── Yet (미완성) 항목 처리 ── */
-.project-list li a[href="#"] {
-  opacity: 0.4;
-  cursor: default;
+.theme-toggle .material-icons {
+  font-size: 18px;
   pointer-events: none;
 }
 
-/* ── Responsive ── */
-@media (max-width: 480px) {
-  body {
-    padding: 3rem 1rem;
-    align-items: flex-start;
-  }
-  .project-list li {
-    padding: 0.75rem 1rem;
-  }
-  .project-list li a:first-child {
-    font-size: 0.85rem;
-  }
+body {
+  font-family: var(--font-pretendard);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.project-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
 }/*# sourceMappingURL=style.css.map */

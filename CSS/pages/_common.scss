@@ -1,34 +1,19 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-}
+// ─────────────────────────────────────────
+// 페이지 공통 레이아웃
+// ─────────────────────────────────────────
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-pretendard);
   background-color: var(--color-bg);
   color: var(--color-text-primary);
   line-height: 1.6;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
 
-li a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: color var(--transition);
-}
-
-a:hover {
-  color: var(--color-accent-hover);
-}
-
-ul {
-  list-style: none;
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
