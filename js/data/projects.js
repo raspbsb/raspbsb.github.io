@@ -8,6 +8,10 @@ export const projects = [
     categories: ["project", "frontend", "responsive", "team"],
     isWip: false,
 
+    techStack: ["HTML", "SCSS", "JavaScript"],
+    startAt: "2026-04-30",
+    completedAt: "2026-05-12",
+
     relativeUrl: "/my-EST_FE_13_1st_Project/",
     liveUrl: "https://raspbsb.github.io/my-EST_FE_13_1st_Project/",
     githubUrl: "https://github.com/raspbsb/my-EST_FE_13_1st_Project",
@@ -21,6 +25,10 @@ export const projects = [
 
     categories: ["project", "frontend", "responsive", "team"],
     isWip: true,
+
+    techStack: ["HTML", "SCSS", "JavaScript"],
+    startAt: "2026-05-29",
+    completedAt: "2026-06-18",
 
     relativeUrl: "#",
     liveUrl: "#",
@@ -36,23 +44,13 @@ export const projects = [
     categories: ["project", "frontend", "responsive", "team"],
     isWip: true,
 
+    techStack: ["HTML", "SCSS", "JavaScript"],
+    startAt: "2026-07-28",
+    completedAt: "2026-08-21",
+
     relativeUrl: "#",
     liveUrl: "#",
     githubUrl: "#",
-  },
-
-  {
-    title: "ACME",
-    desc: "디자인 참조 코딩 연습 : 가상의 브랜드 ACME. HTML / CSS / js",
-    image: "./images/acme.png",
-    alt: "ACME 스크린샷",
-
-    categories: ["practice", "frontend"],
-    isWip: false,
-
-    relativeUrl: "/ACME/",
-    liveUrl: "https://raspbsb.github.io/ACME/",
-    githubUrl: "https://github.com/raspbsb/ACME",
   },
 
   {
@@ -64,9 +62,31 @@ export const projects = [
     categories: ["practice", "frontend"],
     isWip: false,
 
+    techStack: ["HTML", "SCSS", "JavaScript"],
+    startAt: "2026-04-17",
+    completedAt: undefined,
+
     relativeUrl: "/LTLJRNL/",
     liveUrl: "https://raspbsb.github.io/LTLJRNL/",
     githubUrl: "https://github.com/raspbsb/LTLJRNL",
+  },
+
+  {
+    title: "ACME",
+    desc: "디자인 참조 코딩 연습 : 가상의 브랜드 ACME. HTML / CSS / js",
+    image: "./images/acme.png",
+    alt: "ACME 스크린샷",
+
+    categories: ["practice", "frontend"],
+    isWip: false,
+
+    techStack: ["HTML", "SCSS", "JavaScript"],
+    startAt: "2026-04-24",
+    completedAt: undefined,
+
+    relativeUrl: "/ACME/",
+    liveUrl: "https://raspbsb.github.io/ACME/",
+    githubUrl: "https://github.com/raspbsb/ACME",
   },
 
   {
@@ -77,6 +97,10 @@ export const projects = [
 
     categories: ["study", "frontend"],
     isWip: false,
+
+    techStack: ["HTML", "SCSS", "JavaScript"],
+    startAt: "2026-05-13",
+    completedAt: undefined,
 
     relativeUrl: "/javascript_ex/",
     liveUrl: "https://raspbsb.github.io/javascript_ex/",
@@ -91,6 +115,10 @@ export const projects = [
 
     categories: ["study", "frontend", "api"],
     isWip: false,
+
+    techStack: ["HTML", "SCSS", "JavaScript"],
+    startAt: "2026-05-21",
+    completedAt: undefined,
 
     relativeUrl: "/Dynamic_Web_API/",
     liveUrl: "https://raspbsb.github.io/Dynamic_Web_API/",
