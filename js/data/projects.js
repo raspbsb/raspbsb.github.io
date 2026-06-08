@@ -54,6 +54,24 @@ export const projects = [
   },
 
   {
+    title: "EST_SHOP",
+    desc: "비동기 데이터 렌더링 / 로컬스토리지 활용 연습 : 가상의 브랜드 EST_SHOP. HTML / CSS / js",
+    image: "./images/EST_SHOP.png",
+    alt: "EST_SHOP 스크린샷",
+
+    categories: ["practice", "frontend"],
+    isWip: false,
+
+    techStack: ["HTML", "SCSS", "JavaScript"],
+    startAt: "2026-04-17",
+    completedAt: undefined,
+
+    relativeUrl: "/EST_SHOP/",
+    liveUrl: "https://raspbsb.github.io/EST_SHOP/",
+    githubUrl: "https://github.com/raspbsb/EST_SHOP",
+  },
+
+  {
     title: "LTLJRNL",
     desc: "디자인 참조 코딩 연습 : 가상의 브랜드 LTLJRNL(리틀저널). HTML / CSS / js",
     image: "./images/ltljrnl.png",
