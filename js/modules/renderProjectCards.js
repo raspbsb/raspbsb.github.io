@@ -24,11 +24,11 @@ export function renderProjectCards(projects, target) {
         <img src="${project.image}" alt="${project.alt}" />
       </div>
 
-      <div class="project-card__body">
+      <a href="${project.detailPagePath ? project.detailPagePath : ""}" class="project-card__body">
         ${categoryList}
         <h2 class="project-card__title">${project.title}</h2>
         <p class="project-card__desc">${project.desc}</p>
-      </div>
+      </a>
 
       <div class="project-card__footer">
         <div class="project-card__links">

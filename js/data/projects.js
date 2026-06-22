@@ -7,8 +7,9 @@ export const projects = [
 
     categories: ["project", "frontend", "responsive", "team"],
     isWip: false,
+    detailPagePath: "./projects/EST_Camp.html",
 
-    techStack: ["HTML", "SCSS", "JavaScript"],
+    techStack: ["HTML", "SCSS"],
     startAt: "2026-04-30",
     completedAt: "2026-05-12",
 
@@ -18,21 +19,22 @@ export const projects = [
   },
 
   {
-    title: "Project_2_yet",
-    desc: "준비 중인 프로젝트입니다.",
-    image: "./images/default.png",
-    alt: "준비 중",
+    title: "Project_2_My_ROUNZ_Shop",
+    desc: "오르미 프론트엔드 13기 2차 프로젝트 : ROUNZ 리뉴얼. javaScript 프론트엔드 데이터 기반 동적 웹사이트",
+    image: "./images/project_2_my_rounz_shop.png",
+    alt: "Project_2_My_ROUNZ_Shop 스크린샷",
 
     categories: ["project", "frontend", "responsive", "team"],
-    isWip: true,
+    isWip: false,
+    detailPagePath: "./projects/ROUNZ_Shop.html",
 
     techStack: ["HTML", "SCSS", "JavaScript"],
     startAt: "2026-05-29",
-    completedAt: "2026-06-18",
+    completedAt: "2026-06-19",
 
-    relativeUrl: "#",
-    liveUrl: "#",
-    githubUrl: "#",
+    relativeUrl: "/my-EST_FE_13_2nd_Project/",
+    liveUrl: "https://raspbsb.github.io/my-EST_FE_13_2nd_Project/",
+    githubUrl: "https://github.com/raspbsb/my-EST_FE_13_2nd_Project",
   },
 
   {
@@ -43,6 +45,7 @@ export const projects = [
 
     categories: ["project", "frontend", "responsive", "team"],
     isWip: true,
+    detailPagePath: "",
 
     techStack: ["HTML", "SCSS", "JavaScript"],
     startAt: "2026-07-28",
@@ -61,6 +64,7 @@ export const projects = [
 
     categories: ["practice", "frontend"],
     isWip: false,
+    detailPagePath: "",
 
     techStack: ["HTML", "SCSS", "JavaScript"],
     startAt: "2026-04-17",
@@ -79,6 +83,7 @@ export const projects = [
 
     categories: ["practice", "frontend"],
     isWip: false,
+    detailPagePath: "",
 
     techStack: ["HTML", "SCSS", "JavaScript"],
     startAt: "2026-04-17",
@@ -97,6 +102,7 @@ export const projects = [
 
     categories: ["practice", "frontend"],
     isWip: false,
+    detailPagePath: "",
 
     techStack: ["HTML", "SCSS", "JavaScript"],
     startAt: "2026-04-24",
@@ -115,6 +121,7 @@ export const projects = [
 
     categories: ["study", "frontend"],
     isWip: false,
+    detailPagePath: "",
 
     techStack: ["HTML", "SCSS", "JavaScript"],
     startAt: "2026-05-13",
@@ -133,6 +140,7 @@ export const projects = [
 
     categories: ["study", "frontend", "api"],
     isWip: false,
+    detailPagePath: "",
 
     techStack: ["HTML", "SCSS", "JavaScript"],
     startAt: "2026-05-21",

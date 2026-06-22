@@ -10,8 +10,10 @@
     <link rel="icon" href="images/favicon_raspbsb_portfolio.svg" />
   </head>
   <body>
+    <!-- 헤더 -->
     <header class="site-header">
       <h1>Raspbsb Portfolio</h1>
+
       <div class="site-header__actions">
         <a
           class="github-link"
@@ -34,5 +36,42 @@
     </section>
 
     <script type="module" src="./js/main.js"></script>
+
+    <!-- 푸터 -->
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+        <section class="footer__section footer__profile" aria-labelledby="footer-profile-title">
+          <h2 id="footer-profile-title" class="footer__title">Contact</h2>
+
+          <p class="footer__name">배정호</p>
+          <p class="footer__role">Frontend Developer / Web Publisher</p>
+        </section>
+
+        <address class="footer__section footer__contact">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <span class="footer__label">Email</span>
+              <a href="mailto:unionbjh@naver.com" class="footer__link"> unionbjh@naver.com </a>
+            </li>
+
+            <li class="footer__item">
+              <span class="footer__label">GitHub</span>
+              <a
+                href="https://github.com/raspbsb"
+                class="footer__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/raspbsb
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 배정호. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,10 +1,19 @@
+// base
 @use "base/normalize";
 @use "base/reset";
 @use "base/variables";
 @use "base/fonts";
+
+// components
 @use "components/buttons";
 @use "components/cards";
+
+// layouts
 @use "layouts/header";
 @use "layouts/footer";
+
+// pages
 @use "pages/common";
 @use "pages/index";
+@use "pages/EST_Camp";
+@use "pages/ROUNZ_Shop";
